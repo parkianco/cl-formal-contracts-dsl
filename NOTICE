@@ -1,0 +1,12 @@
+cl-formal-contracts-dsl
+Copyright (c) 2025 CLPIC Project
+
+This software was originally developed as part of the CLPIC project
+(Common Lisp P2P Intellectual Property Chain) and has been extracted
+as a standalone library for general use.
+
+The contract DSL provides design-by-contract programming capabilities
+for Common Lisp, with support for preconditions, postconditions, type
+specifications, and formal verification through proof obligations.
+
+This is a pure Common Lisp implementation with no external dependencies.
