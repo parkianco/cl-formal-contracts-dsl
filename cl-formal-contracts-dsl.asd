@@ -3,13 +3,13 @@
 ;;;; Design-by-contract DSL for Common Lisp
 ;;;; Provides defun/spec macro with :requires, :ensures, and formal verification
 ;;;;
-;;;; Copyright (c) 2025 CLPIC Project
+;;;; Copyright (c) 2024-2026 Parkian Company LLC
 ;;;; MIT License
 
 (defsystem "cl-formal-contracts-dsl"
   :name "cl-formal-contracts-dsl"
   :version "1.0.0"
-  :author "CLPIC Project"
+  :author "Parkian Company LLC"
   :license "MIT"
   :description "Design-by-contract DSL for Common Lisp with formal verification support"
   :long-description "A pure Common Lisp implementation of design-by-contract programming.
@@ -44,7 +44,7 @@ Contracts generate proof obligations that can be:
 (defsystem "cl-formal-contracts-dsl/test"
   :name "cl-formal-contracts-dsl-test"
   :version "1.0.0"
-  :author "CLPIC Project"
+  :author "Parkian Company LLC"
   :license "MIT"
   :description "Tests for cl-formal-contracts-dsl"
 
