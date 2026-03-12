@@ -56,4 +56,6 @@ Contracts generate proof obligations that can be:
     ((:file "test-contracts"))))
 
   :perform (test-op (op c)
-             (funcall (find-symbol "RUN-TESTS" "FORMAL-CONTRACTS-DSL.TEST"))))
+             (let ((result (funcall (find-symbol "RUN-TESTS" "FORMAL-CONTRACTS-DSL.TEST"))))
+               (unless result
+                 (error "Tests failed")))))
