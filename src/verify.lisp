@@ -1,3 +1,6 @@
+;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; src/verify.lisp - Compile-Time Verification
 ;;;;
 ;;;; Static verification of contracts at compile time.

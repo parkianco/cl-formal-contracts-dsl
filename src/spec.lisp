@@ -1,3 +1,6 @@
+;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; src/spec.lisp - Definition Macros
 ;;;;
 ;;;; Provides defun/spec, defmethod/spec, and related macros for

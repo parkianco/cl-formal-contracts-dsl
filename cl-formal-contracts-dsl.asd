@@ -1,3 +1,6 @@
+;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; cl-formal-contracts-dsl.asd - System Definition
 ;;;;
 ;;;; Design-by-contract DSL for Common Lisp
@@ -6,9 +9,9 @@
 ;;;; Copyright (c) 2024-2026 Parkian Company LLC
 ;;;; MIT License
 
-(defsystem "cl-formal-contracts-dsl"
+(asdf:defsystem #:"cl-formal-contracts-dsl"
   :name "cl-formal-contracts-dsl"
-  :version "1.0.0"
+  :version "0.1.0"
   :author "Parkian Company LLC"
   :license "MIT"
   :description "Design-by-contract DSL for Common Lisp with formal verification support"
@@ -39,11 +42,11 @@ Contracts generate proof obligations that can be:
      (:file "registry")
      (:file "spec"))))
 
-  :in-order-to ((test-op (test-op "cl-formal-contracts-dsl/test"))))
+  :in-order-to ((asdf:test-op (test-op "cl-formal-contracts-dsl/test"))))
 
-(defsystem "cl-formal-contracts-dsl/test"
+(asdf:defsystem #:"cl-formal-contracts-dsl/test"
   :name "cl-formal-contracts-dsl-test"
-  :version "1.0.0"
+  :version "0.1.0"
   :author "Parkian Company LLC"
   :license "MIT"
   :description "Tests for cl-formal-contracts-dsl"
@@ -55,7 +58,7 @@ Contracts generate proof obligations that can be:
     :components
     ((:file "test-contracts"))))
 
-  :perform (test-op (op c)
+  :perform (asdf:test-op (op c)
              (let ((result (funcall (find-symbol "RUN-TESTS" "FORMAL-CONTRACTS-DSL.TEST"))))
                (unless result
                  (error "Tests failed")))))
